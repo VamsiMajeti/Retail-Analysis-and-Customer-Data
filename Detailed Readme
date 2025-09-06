@@ -1,0 +1,11 @@
+Overview: This project demonstrates a complete end-to-end SQL case study for a retail business. Using simulated data, I applied SQL to analyze customer behavior, sales performance & product trends. It reflects the type of real-world analysis a Data Analyst would perform.
+
+Database Schema: Customers Table - Customer details (ID, Name, City, Signup Date). Orders Table - Orders linked to customers with amount & order date. Products Table - Product details (ID, Name, Category, Price). Sales Table → Combined order-product transactions with revenue
+
+Key Questions Solved: Find customers who signed up after March 1, 2021 & bought Electronics, Calculate total price, discount & final price for each order, Identify top cities by total sales & average spend per customer, Rank customers by total revenue contribution, Use aggregate functions (SUM, AVG, MIN, MAX) across categories, Apply HAVING to filter groups by average revenue.
+
+Analyze Q1 vs Q2 sales using UNION & CTEs, Use window functions (ROW_NUMBER, RANK, DENSE_RANK, NTILE, LEAD, LAG) to find, Top 3 customers per department.Quartiles of customer spending. Previous & next order values for trend tracking. Explore grouping sets (ROLLUP, CUBE) for multi-level summaries. Apply transactions, indexes & constraints to ensure data quality.
+
+Structure: SQL_Scripts/ - Contains all SQL queries organized by topic, Datasets/ - CSVs used for loading into PostgreSQL, Project_Report.md - Contains explanations & insights.
+
+Sample Insights: Miami & New York contributed the highest sales revenue, Laptops generated the most revenue across all quarters, High-spending customers were placed in Gold, Silver, Bronze tiers using NTILE, Tech & Finance departments showed the most top-tier salaries in employee datasets, Weekend sales outperformed weekdays, showing shopping patterns.
